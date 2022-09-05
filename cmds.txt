@@ -1,0 +1,70 @@
+    1  ls
+    2  cd /home/ec2-user/environment/operationalize-ml-main
+    3  bash resize.sh 100
+    4  make setup
+    5  source ~/.devops/bin/activate
+    6  make install
+    7  make lint
+    8  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+    9  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   10  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+   11  sudo chmod +x ./kubectl
+   12  sudo mv ./kubectl /usr/local/bin/kubectl
+   13  docker version
+   14  make lint
+   15  ls
+   16  cd operationalize-ml-main
+   17  make setup
+   18  source ~/.devops/bin/activate
+   19  bash make_prediction.sh
+   20  bash run_docker.sh
+   21  touch docker_out.txt
+   22  bash upload_docker.sh
+   23  touch kubernetes_out.txt
+   24  minikube start
+   25  bash run_kubernetes.sh
+   26  mkdir .circleci
+   27  git init
+   28  git commit -m "first proj commit" 
+   29  git status
+   30  git add .
+   31  git commit -m "first proj commit" 
+   32  git branch -M main
+   33  git remote add origin https://github.com/fiyin2k/operationalize-k8s-ml.git
+   34  git push -u origin main
+   35  git pull
+   36  git push -u origin main
+   37  git push
+   38   git push --set-upstream origin main
+   39  git pull main
+   40  git fetch origin
+   41  git merge origin main
+   42  git merge origin deploy
+   43  git pull origin main
+   44  git config --global
+   45  git push --set-upstream origin main
+   46  git pull origin main 
+   47  exit
+   48  ls
+   49  cd operationalize-ml-main
+   50  git init
+   51  git commit -m "first commit"
+   52  git status
+   53  git add .
+   54  git status
+   55  git push
+   56  git push --set-upstream origin main
+   57  origin https://github.com/fiyin2k/k8s-ops-ml.git (fetch)
+   58  origin https://github.com/fiyin2k/k8s-ops-ml.git
+   59  git remote set-url origin https://github.com/fiyin2k/k8s-ops-ml.git
+   60  git init
+   61  git remote set-url origin https://github.com/fiyin2k/k8s-ops-ml.git
+   62  git commit -m "first commit"
+   63  git status
+   64  git branch -M main
+   65  git remote add origin https://github.com/fiyin2k/k8s-ops-ml.git
+   66  git push -u origin main
+   67  git add .
+   68  git commit -m "Added status badge"
+   69  git push
+   70  history > cmds.txt
