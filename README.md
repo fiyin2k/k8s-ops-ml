@@ -14,16 +14,14 @@ The Operationalize ML project contains a Machine Learning Microservice, built on
 - Integrate within CircleCI for continuous integration and indicate test status using CircleCI badge
 
 ## Requirements
-``python3 -m pip install --user virtualenv
-# You should have Python 3.7 available in your host. 
+```bash
+python3 -m pip install --user virtualenv
+# Must have Python 3.7 available in your host. 
 # Check the Python path using `which python3`
 
 python3 -m virtualenv --python=<path-to-Python3.7> .devops
 source .devops/bin/activate
-``
-
-
-
+```
 
 ### Step 1: Install dependencies
 - Set up  environment by running `make setup`. This will create a virtual environment in your home directory called `.devops`
